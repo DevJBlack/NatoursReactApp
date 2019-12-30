@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin: auto;
   width: 85%;
@@ -23,8 +24,14 @@
 }
 
 
+.col-1-of-4 {
+  margin: 0 15px;
+}
 
-
+i {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
 
 
 

@@ -52,79 +52,55 @@ const App = () => {
               </div>
             </div>
           </section>
+
+          <section className="section-features">  
+
+                <div className="box">
+                    <div className="col-1-of-4">
+                        <div className="feature-box">
+                        <i className="fas fa-globe-americas"></i>
+                            <h3 className="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                            <p className="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="col-1-of-4">
+                        <div className="feature-box">
+                          <i class="far fa-compass"></i>
+                            <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                            <p className="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="col-1-of-4">
+                        <div className="feature-box">
+                            <i class="fas fa-mountain"></i>
+                            <h3 className="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                             <p className="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="col-1-of-4">
+                        <div className="feature-box">
+                            <i class="far fa-heart"></i>
+                            <h3 className="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+                            <p className="feature-box__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </main>
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-// <section className='gird-test'>
-
-  
-
-//   <div className='row'>
-//     <div className='col-1-of-3'>
-//         Col 1 of 3
-//     </div>
-//     <div className='col-1-of-3'>
-//         Col 1 of 3
-//     </div>
-//     <div className='col-1-of-3'>
-//         Col 1 of 3
-//     </div>
-//   </div>
-
-//   <div className='row'>
-//     <div className='col-1-of-3'>
-//         Col 1 of 3
-//     </div>
-//     <div className='col-2-of-3'>
-//         Col 2 of 3
-//     </div>
-//   </div>
-
-//   <div className='row'>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//   </div>
-
-//   <div className='row'>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//     <div className='col-2-of-4'>
-//         Col 2 of 4
-//     </div>
-//   </div>
-
-//   <div className='row'>
-//     <div className='col-1-of-4'>
-//         Col 1 of 4
-//     </div>
-//     <div className='col-3-of-4'>
-//         Col 3 of 4
-//     </div>
-//   </div>
-
-
-// </section> 
