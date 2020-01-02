@@ -58,7 +58,7 @@ const App = () => {
                 <div className="box">
                     <div className="col-1-of-4">
                         <div className="feature-box">
-                        <i className="fas fa-globe-americas"></i>
+                        <i className="feature-box__icon fas fa-globe-americas"></i>
                             <h3 className="heading-tertiary u-margin-bottom-small">Explore the world</h3>
                             <p className="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
@@ -68,7 +68,7 @@ const App = () => {
 
                     <div className="col-1-of-4">
                         <div className="feature-box">
-                          <i class="far fa-compass"></i>
+                          <i className="feature-box__icon far fa-compass"></i>
                             <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
                             <p className="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
@@ -78,7 +78,7 @@ const App = () => {
 
                     <div className="col-1-of-4">
                         <div className="feature-box">
-                            <i class="fas fa-mountain"></i>
+                            <i className="feature-box__icon fas fa-mountain"></i>
                             <h3 className="heading-tertiary u-margin-bottom-small">Find your way</h3>
                              <p className="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
@@ -88,7 +88,7 @@ const App = () => {
 
                     <div className="col-1-of-4">
                         <div className="feature-box">
-                            <i class="far fa-heart"></i>
+                            <i className="feature-box__icon far fa-heart"></i>
                             <h3 className="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
                             <p className="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
