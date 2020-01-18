@@ -33,7 +33,29 @@
 
 
 .section-stories {
-  padding: 15rem 0;
-  background: $color-grey-light-1;
+  position: relative;
+  padding: 6rem 0;
   width: 100%;
+}
+
+.section-book {
+  width: 100%;
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+  background-image:  linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../../../components/img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+  width: 85%;
+  height: 40rem;
+  background-size: cover;
+
+  &__form {
+    width: 50%;
+    padding: 4rem;
+  }
 }
