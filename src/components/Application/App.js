@@ -6,6 +6,7 @@ import SectionFeatures from './SectionFeatures'
 import SectionTours from './SectionTours'
 import SectionStories from './SectionStories'
 import SectionBook from './SectionBook'
+import SectionFooter from './SectionFooter'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <SectionTours />
           <SectionStories />
           <SectionBook />
+          <SectionFooter />
           
         </main>
     </div>

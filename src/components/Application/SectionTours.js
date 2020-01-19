@@ -11,7 +11,7 @@ const SectionTours = () => {
               </div>
 
               <div className="box">
-                <div className="col-1-of-3">
+                <div>
                   <div className="card">
                     <div className="card__side card__side--front">
 
@@ -47,7 +47,7 @@ const SectionTours = () => {
                     </div>
                  </div>
                 </div>
-                <div className="col-1-of-3">                 
+                <div>                 
                   <div className="card">
                       <div className="card__side card__side--front">
 
@@ -83,7 +83,7 @@ const SectionTours = () => {
                       </div>
                   </div>
                 </div>
-                <div className="col-1-of-3">                   
+                <div>                   
                   <div className="card">
                       <div className="card__side card__side--front">
 
