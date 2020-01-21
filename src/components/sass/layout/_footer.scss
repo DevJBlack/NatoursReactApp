@@ -17,7 +17,6 @@
     border-top: 1px solid $color-grey-dark;
     padding-top: 1rem;
     display: inline-block;
-
   }
 
   &__list {
@@ -42,12 +41,12 @@
       display: inline-block;
       transition: all .2s;
     }
-
+    
     &:hover,
     &:active {
       color: $color-primary;
       box-shadow: 0 1rem 2rem rgba($color-black, .4);
-      transform: rotate(5deg) scale(1.3)
+      transform: rotate(5deg) scale(1.3);
     }
   }
 
