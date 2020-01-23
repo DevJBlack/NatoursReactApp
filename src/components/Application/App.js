@@ -8,6 +8,7 @@ import SectionTours from './SectionTours'
 import SectionStories from './SectionStories'
 import SectionBook from './SectionBook'
 import SectionFooter from './SectionFooter'
+import Popup from './Popup'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <SectionStories />
           <SectionBook />
           <SectionFooter />
+          <Popup />
           
         </main>
     </div>
