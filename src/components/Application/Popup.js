@@ -11,7 +11,7 @@ const Popup = () => {
           <img className='popup__img' src={natNine} alt="nat-9"/>
         </div>
         <div className="popup__right">
-          <a href="#sectionTour" className="popup__close"></a>
+          <a href="#sectionTour" className="popup__close">&times;</a>
           <h2 className="heading-secondary u-margin-bottom-medium-two">Start booking now</h2>
           <h3 className="heading-tertiary  u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
           <p className="popup__text">
