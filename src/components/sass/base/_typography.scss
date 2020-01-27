@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 30px;
+  
 }
 
 .heading-primary {
@@ -14,15 +14,22 @@ body {
   backface-visibility: hidden;
   margin: 7rem;
 
+
   &-main{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3rem;
   
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
+   
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem ;
+    }
+
   };
 
     &-sub{
@@ -32,6 +39,11 @@ body {
     letter-spacing: 17.4px;
 
     animation: moveInRight 1.5s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+      font-size: 4rem ;
+    }
   };
 }
 
@@ -45,6 +57,14 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s;
+
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1) ;
