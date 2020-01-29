@@ -10,21 +10,20 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-
   backface-visibility: hidden;
   margin: 7rem;
 
 
   &-main{
     display: block;
-    font-size: 6rem;
+    font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: 3rem;
   
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
-   
+
     @include respond(phone) {
       letter-spacing: 1rem;
       font-size: 5rem ;
@@ -34,11 +33,15 @@ body {
 
     &-sub{
     display: block;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 17.4px;
 
     animation: moveInRight 1.5s ease-out;
+
+    @include respond(tab-port){
+      letter-spacing: 1rem;
+    }
 
     @include respond(phone) {
       letter-spacing: .5rem;

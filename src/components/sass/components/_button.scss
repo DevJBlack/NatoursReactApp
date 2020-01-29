@@ -6,17 +6,17 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1rem 1rem;
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
     position: relative;  
-    font-size: $default-font-size;
+    font-size: .7rem;
     text-align: center;
     // Change for the <button element
     border: none;
     cursor: pointer;
-    width: 20.5rem;
+    width: 15rem;
 
   }
 
