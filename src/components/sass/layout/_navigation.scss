@@ -18,6 +18,8 @@
     cursor: pointer;
 
     @include respond(tab-port){
+      height: 6rem;
+      width: 6rem;
       top: 3.5rem;
       right: 3.5rem;
     }
@@ -37,7 +39,7 @@
     right: 5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
-    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1) ;
+    transition: transform .7s cubic-bezier(0.86, 0, 0.07, 1) ;
 
     @include respond(tab-port){
       top: 4rem;
@@ -55,7 +57,7 @@
     width: 0%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1500;
 
     display: flex;
@@ -94,6 +96,8 @@
       background-size: 230%;
       transition: all .4s;
 
+      
+
       span {
         margin-right: 1rem;
         display: inline-block;
@@ -111,6 +115,10 @@
 
   &__checkbox:checked ~ &__background {
     transform: scale(120);
+
+    @include respond(tab-port){
+      transform: scale(200);
+    }
   }
 
   &__checkbox:checked ~ &__nav {
@@ -122,6 +130,10 @@
     position: relative;
     margin-top: 2rem;
 
+    @include respond(tab-port){
+      margin-top: 2.8rem
+    }
+
     &,
     &::before,
     &::after {
@@ -129,6 +141,10 @@
       height: 2px;
       background: $color-grey-dark-3;
       display: inline-block;
+
+      @include respond(tab-port){
+        width: 3rem
+      }
     }
 
     &::before,
@@ -139,12 +155,23 @@
       transition: all .2s;
     }
 
-    &::before { top: -.5rem; }
-    &::after { top: .5rem; }
+    &::before { 
+      top: -.5rem;
+      @include respond(tab-port){
+        top: -.8rem
+      }
+     }
+    &::after { 
+      top: .5rem; 
+      @include respond(tab-port){
+        top: .8rem
+      }
+    }
   }
 
   &__button:hover &__icon::before {
     top: -.8rem;
+    
   }
 
   &__button:hover &__icon::after {
