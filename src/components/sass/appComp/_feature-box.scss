@@ -7,6 +7,12 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s;
 
+  @include respond(tab-port){
+    padding: 3rem 2rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+  }
+
   
 
   &__icon {
@@ -16,9 +22,16 @@
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark) ;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-port){
+      font-size: 6rem;
+    }
   }
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
+    @include respond(tab-port){
+      transform: translateY(-1.5rem) scale(1.1);
+    }
   }
 }

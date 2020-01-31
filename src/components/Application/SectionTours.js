@@ -11,7 +11,6 @@ const SectionTours = () => {
               </div>
 
               <div className="box">
-                <div>
                   <div className="card">
                     <div className="card__side card__side--front">
 
@@ -46,8 +45,6 @@ const SectionTours = () => {
                       </div>
                     </div>
                  </div>
-                </div>
-                <div>                 
                   <div className="card">
                       <div className="card__side card__side--front">
 
@@ -82,8 +79,6 @@ const SectionTours = () => {
                         </div>
                       </div>
                   </div>
-                </div>
-                <div>                   
                   <div className="card">
                       <div className="card__side card__side--front">
 
@@ -119,8 +114,6 @@ const SectionTours = () => {
                       </div>
                   </div>
                 </div>
-              </div>
-
               <div className="u-center-text u-margin-top-large">
                 <a href="localhost:3000" className="btn btn-green">Discover All Tours</a>
               </div>

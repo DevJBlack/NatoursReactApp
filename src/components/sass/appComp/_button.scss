@@ -91,6 +91,11 @@
     padding: 3px;
     transition: all .2s;
 
+    @include respond(tab-port){
+      font-size: 1.5rem;
+      border-bottom: 1.5px solid $color-primary;
+      padding: 5px;
+    }
     
   }
 

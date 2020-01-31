@@ -11,26 +11,45 @@
     transition: all .1s;
     outline-offset: 1.5rem;
 
+
     &--p1 {
       left: 0;
-      top: -2;
+      top: -1rem;
+      @include respond(tab-port){
+        width: 65%;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 2rem;
+      @include respond(tab-port){
+        right: -5rem;
+        top: 3rem;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 10rem;
+      @include respond(tab-port){
+        top: 15rem;
+      }
+    }
+
+    @include respond(tab-port){
+      width: 65%;
     }
 
     &:hover {
-      outline: 1rem solid $color-primary;
+      outline: .8rem solid $color-primary;
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 20;
+
+      @include respond(tab-port){
+        outline: 1rem solid $color-primary;
+      }
     }
   }
 
