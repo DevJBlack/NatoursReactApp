@@ -10,7 +10,7 @@ const SectionBook = () => {
             <div className="book__form">
               <form action="&" className="form">
                 <div className="u-margin-bottom-medium">
-                  <h2 className="heading-secondary">
+                  <h2 className="heading-secondary-sub">
                     Start Booking Now
                   </h2>
                 </div>

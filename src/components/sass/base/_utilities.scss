@@ -10,7 +10,11 @@
 } 
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem !important;
+  margin-bottom: 4rem ;
+
+  @include respond(tab-port){
+    margin-bottom: 2rem;
+  }
 } 
 
 .u-margin-bottom-large {

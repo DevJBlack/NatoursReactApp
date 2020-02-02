@@ -77,6 +77,10 @@
   height: 35rem;
   background-size: cover;
 
+  @include respond(tab-port){
+    background-position: top 10% right ;
+  }
+
   &__form {
     width: 50%;
     padding: 4rem;
