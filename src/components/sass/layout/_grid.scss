@@ -29,11 +29,19 @@
   @include respond(tab-port){
     margin-bottom: 6rem;
   }
+
+  @include respond(phone){
+    width: 60%;
+  }
 }
 
 .box-2-of-2 {
   width: 50%;
   margin: .5rem;
+
+  @include respond(phone){
+    width: 60%;
+  }
 }
 
 

@@ -41,6 +41,10 @@
       width: 65%;
     }
 
+    @include respond(phone) {
+      width: 70%;
+    }
+
     &:hover {
       outline: .8rem solid $color-primary;
       transform: scale(1.05) translateY(-.5rem);
