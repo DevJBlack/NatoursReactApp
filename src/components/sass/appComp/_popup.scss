@@ -54,6 +54,10 @@
     display: block;
     width: 100%;
 
+    @include respond(phone){
+      margin-top: 3rem;
+    }
+
   }
 
   &__text {

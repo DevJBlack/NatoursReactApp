@@ -12,8 +12,8 @@ const Popup = () => {
         </div>
         <div className="popup__right">
           <a href="#sectionTour" className="popup__close">&times;</a>
-          <h2 className="heading-secondary u-margin-bottom-medium-two">Start booking now</h2>
-          <h3 className="heading-tertiary  u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+          <h2 className="heading-secondary-sub u-margin-bottom-medium-two">Start booking now</h2>
+          <h3 className="heading-tertiary-sub  u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
           <p className="popup__text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus molestias nostrum facilis dicta dolore ex molestiae, saepe amet eum consequatur maxime ipsa ad laudantium, reiciendis optio. Recusandae eaque distinctio eveniet!
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus molestias nostrum facilis dicta dolore ex molestiae, saepe amet eum consequatur maxime ipsa ad laudantium, reiciendis optio. Recusandae eaque distinctio eveniet!
