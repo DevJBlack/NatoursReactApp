@@ -10,7 +10,7 @@ const SectionBook = () => {
             <div className="book__form">
               <form action="&" className="form">
                 <div className="u-margin-bottom-medium">
-                  <h2 className="heading-secondary-sub">
+                  <h2 className="heading-secondary-small">
                     Start Booking Now
                   </h2>
                 </div>
@@ -34,7 +34,7 @@ const SectionBook = () => {
                   </div>
                 </div>
                 <div className="form__group">
-                  <button className="btn btn-green">Next Step &rarr; </button>
+                  <button className="btn-small btn-green">Next Step &rarr; </button>
                 </div>
               </form>
             </div>

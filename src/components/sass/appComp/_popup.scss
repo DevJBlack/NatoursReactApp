@@ -48,6 +48,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 4rem;
+
+    @include respond(phone){
+      padding: 1rem 3rem;
+    }
   }
 
   &__img {
@@ -55,7 +59,7 @@
     width: 100%;
 
     @include respond(phone){
-      margin-top: 3rem;
+      margin: 3rem 1rem;
     }
 
   }

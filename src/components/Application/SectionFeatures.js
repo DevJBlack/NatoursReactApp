@@ -17,7 +17,7 @@ const SectionFeatures = () => {
 
               <div className="col-1-of-4">
                   <div className="feature-box">
-                    <i className="feature-box__icon far fa-compass"></i>
+                    <i className="feature-box__icon fas fa-mountain"></i>
                       <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
                       <p className="feature-box__text">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
@@ -27,7 +27,7 @@ const SectionFeatures = () => {
 
               <div className="col-1-of-4">
                   <div className="feature-box">
-                      <i className="feature-box__icon fas fa-mountain"></i>
+                      <i className="feature-box__icon far fa-compass"></i>
                       <h3 className="heading-tertiary u-margin-bottom-small">Find your way</h3>
                       <p className="feature-box__text">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
