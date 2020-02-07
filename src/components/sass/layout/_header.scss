@@ -11,6 +11,10 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  @include respond(big-desktop){
+    height: 50vh;
+  }
+
   @include respond(tab-port){
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 68vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 68vh, 0 100%);
@@ -29,6 +33,10 @@
     top: 2rem;
     left: 3rem;
 
+    @include respond(big-desktop){
+      top: 3rem;
+    }
+
     @include respond(tab-port) {
       top: 4rem;
       left: 4rem;
@@ -37,6 +45,10 @@
 
   &__logo {
     height: 3rem;
+
+    @include respond(big-desktop){
+      height: 6rem;
+    }
 
     @include respond(tab-port){
       height: 5rem;

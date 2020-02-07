@@ -17,6 +17,13 @@
 
     cursor: pointer;
 
+    @include respond(big-desktop){
+      height: 8rem;
+      width: 8rem;
+      top: 4.3rem;
+      right: 5rem;
+    }
+
     @include respond(tab-port){
       height: 6rem;
       width: 6rem;
@@ -40,6 +47,11 @@
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
     transition: transform .7s cubic-bezier(0.86, 0, 0.07, 1) ;
+
+    @include respond(big-desktop){
+      top: 8rem;
+      right: 8rem;
+    }
 
     @include respond(tab-port){
       top: 4rem;
@@ -96,6 +108,10 @@
       background-size: 230%;
       transition: all .4s;
 
+      @include respond(big-desktop){
+        font-size: 6rem;
+      }
+
       @include respond(tab-port){
         font-size: 3.3rem;
       }
@@ -134,6 +150,10 @@
     position: relative;
     margin-top: 2rem;
 
+    @include respond(big-desktop){
+      margin-top: 4rem;
+    }
+
     @include respond(tab-port){
       margin-top: 2.8rem
     }
@@ -145,6 +165,10 @@
       height: 2px;
       background: $color-grey-dark-3;
       display: inline-block;
+
+      @include respond(big-desktop){
+        width: 4rem;
+      }
 
       @include respond(tab-port){
         width: 3rem
@@ -161,12 +185,22 @@
 
     &::before { 
       top: -.5rem;
+
+      @include respond(big-desktop){
+        top: -1rem;
+      }
+
       @include respond(tab-port){
         top: -.8rem
       }
      }
     &::after { 
       top: .5rem; 
+
+      @include respond(big-desktop){
+        top: 1rem;
+      }
+
       @include respond(tab-port){
         top: .8rem
       }
@@ -175,11 +209,19 @@
 
   &__button:hover &__icon::before {
     top: -.8rem;
+
+    @include respond(big-desktop){
+      top: -1.2rem;
+    }
     
   }
 
   &__button:hover &__icon::after {
     top: .8rem;
+
+    @include respond(big-desktop){
+      top: 1.2rem;
+    }
   }
 
   &__checkbox:checked + &__button &__icon {
