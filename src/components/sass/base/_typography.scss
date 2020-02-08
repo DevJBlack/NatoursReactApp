@@ -24,6 +24,10 @@ body {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
 
+    @include respond(big-desktop){
+      font-size: 10rem;
+    }
+
     @include respond(tab-port){
       font-size: 6rem;
     }
@@ -42,6 +46,10 @@ body {
     letter-spacing: 17.4px;
 
     animation: moveInRight 1.5s ease-out;
+
+    @include respond(big-desktop){
+      font-size: 4rem;
+    }
 
     @include respond(tab-port){
       letter-spacing: 1rem;
@@ -67,6 +75,11 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s;
+
+  @include respond(big-desktop) {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
 
   @include respond(tab-port) {
     font-size: 3.5rem;
@@ -135,6 +148,10 @@ body {
   font-size: .9rem;
   text-transform: uppercase;
 
+  @include respond(big-desktop) {
+    font-size: 2.7rem;
+  }
+
   @include respond(tab-port){
     font-size: 2.2rem;
   }
@@ -161,6 +178,10 @@ body {
 
 .paragraph {
   font-size: .9rem;
+
+  @include respond(big-desktop) {
+    font-size: 2.5rem;
+  }
   
   @include respond(tab-port){
     font-size: 2rem;

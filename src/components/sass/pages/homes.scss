@@ -4,6 +4,11 @@
   margin-top: -40vh;
   width: 100%;
 
+  @include respond(big-desktop){
+    padding: 75rem 0;
+    margin-top: -25vh;
+  }
+
   @include respond(tab-port){
     padding: 55rem 0;
     margin-top: -25vh;
@@ -27,6 +32,10 @@
 
   & > * {
     transform: skewY(5deg);
+  }
+
+  @include respond(big-desktop){
+    padding: 23rem 0;
   }
 
   @include respond(tab-port){

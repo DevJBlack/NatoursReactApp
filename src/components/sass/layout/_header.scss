@@ -12,6 +12,8 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   @include respond(big-desktop){
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
     height: 50vh;
   }
 
