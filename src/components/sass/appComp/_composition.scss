@@ -59,6 +59,10 @@
         outline: 1rem solid $color-primary;
         transform: scale(1.5) translateY(-.5rem);
         z-index: 110;
+
+        @include respond(phone){
+          outline: .5rem solid $color-primary;
+        }
       }
     }
   }
