@@ -186,27 +186,50 @@
   // GIANT MEDIA QUERY 
 
   @include respond(tab-port){ 
-    height: 31rem;
-    width: 20rem;
+    width: 35rem;
+    height: auto;
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    margin: 4rem;
+
+    &__picture {
+      height: 20rem;
+    }
+
+    &__heading {
+      font-size: 2.5rem
+    }
     
       &__side {
-        width: 20rem;
-        height: 31rem;
+        width: 35rem;
+        height: auto;
         position: relative;
-        border-radius: 5px;
-    
-        // @include respond(tab-port){
-        //   width: 30rem;
-        //   height: 36rem;
-        // }
+        box-shadow: none;
+  
+          &--back {
+            transform: rotateY(0deg);
+            clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+        }
       }
     
-        &--back {
-          transform: rotateY(0);
-      }
     
       &:hover &__side--front {
-        transform: rotateY(0);
+        transform: rotateY(0deg);
+      }
+    
+      // &__details {
+      //   li {
+      //     font-size: 2rem;
+      //   }   
+      // }
+
+      &__details {
+        ul {
+          li {
+            font-size: 1.5rem;
+          }   
+        }
       }
     
       // FRONT SIDE STYLING
@@ -217,20 +240,22 @@
         left: 0%;
         transform: translate(0);
         width: 100%;
+        padding: 5rem 5rem .8rem 5rem;
       }
     
       &__price-box {
-        text-align: center;
-        color: $color-white;
+        margin-bottom: 2rem;
+      }
+
+      &__price-only {
+        font-size: 1.5rem;
       }
     
     
       &__price-value {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 100;
         margin-bottom: 4rem;
-    
-        
       }
   }
 }
