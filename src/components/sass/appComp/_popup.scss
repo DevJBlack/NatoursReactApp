@@ -22,11 +22,9 @@
   
 
   &__content {
-    // @include absCenter;
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 60%;
     width: 75%;
     background: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
@@ -36,11 +34,24 @@
     opacity: 0;
     transform: scale(.25);
     transition: all .4s .2s;
+
+    @include respond(tab-port){
+      flex-direction: column;
+    }
+    
   }
 
   &__left {
     width: 33.3333333333%;
     display: table-cell;
+
+    @include respond(tab-port){
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    
   }
 
   &__right {
@@ -49,8 +60,13 @@
     vertical-align: middle;
     padding: 2rem 4rem;
 
-    @include respond(phone){
-      padding: 1rem 3rem;
+    @include respond(tab-port){
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      vertical-align: top;
     }
   }
 
@@ -58,8 +74,10 @@
     display: block;
     width: 100%;
 
-    @include respond(phone){
-      margin: 3rem 1rem;
+    @include respond(tab-port){
+      width: 50%;
+      display: flex;
+      background: cover;
     }
 
   }

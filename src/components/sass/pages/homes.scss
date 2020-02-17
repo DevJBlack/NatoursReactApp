@@ -84,15 +84,24 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
   width: 85%;
-  height: 35rem;
   background-size: cover;
 
   @include respond(tab-port){
-    background-position: top 10% right ;
+    background-position: top 75% right;
   }
+
+  @include respond(phone){
+    background-image:  linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%, transparent 65%), url(../../../components/img/nat-10.jpg);
+  }
+
+
 
   &__form {
     width: 50%;
     padding: 4rem;
+
+    @include respond(phone){
+      width: 100%;
+    }
   }
 }
