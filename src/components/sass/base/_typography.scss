@@ -37,6 +37,10 @@ body {
       font-size: 4.5rem ;
     }
 
+    @include respond(small-phone) {
+      font-size: 6.5rem; 
+    }
+
   };
 
     &-sub{
@@ -61,6 +65,10 @@ body {
       letter-spacing: .8rem;
       font-size: 2.3rem ;
       font-weight: 400;
+    }
+
+    @include respond(small-phone) {
+      font-size: 3.3rem;
     }
   };
 }
@@ -87,6 +95,10 @@ body {
 
   @include respond(phone) {
     font-size: 2.5rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 2rem;   
   }
 
   &-sub {
@@ -153,7 +165,7 @@ body {
   }
 
   @include respond(tab-port){
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   @include respond(phone){
@@ -166,7 +178,7 @@ body {
     text-transform: uppercase;
 
     @include respond(tab-port){
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   
     @include respond(phone){

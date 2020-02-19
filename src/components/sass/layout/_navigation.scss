@@ -158,6 +158,11 @@
       margin-top: 2.8rem
     }
 
+    @include respond(small-phone) {
+      margin-top: 2.5rem;
+      margin-left: .5rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -192,6 +197,10 @@
 
       @include respond(tab-port){
         top: -.8rem
+      }
+
+      @include respond(small-phone) {
+        top: -1rem;
       }
      }
     &::after { 

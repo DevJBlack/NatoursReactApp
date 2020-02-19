@@ -19,7 +19,7 @@ html {
   }
 
   @include respond(small-phone){
-    font-size: 25%;  // 1 rem = 4px, 4/16 = 25 
+    font-size: 12.5%;  // 1 rem = 4px, 4/16 = 25 
   }
   
   @include respond(big-desktop) {

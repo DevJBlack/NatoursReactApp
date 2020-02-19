@@ -1,6 +1,6 @@
 @mixin clearfix {
   &::after {
-    content: "";
+    content: ""; 
     display: table;
     clear: both;
   }
@@ -30,7 +30,7 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {
-    @media (max-width: 20em) { @content };  // 280px
+    @media (max-width: 12.5em) { @content };  // 200px
   }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content };  // 600px

@@ -41,10 +41,44 @@
       position: relative;  
       font-size: .7rem;
       text-align: center;
-      // Change for the <button element
       border: none;
       cursor: pointer;
       width: 15rem;
+
+          
+      &:hover {
+        transform: translateY(-3px); 
+        box-shadow: 0 10px 20px rgba($color-black,.2);
+
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+      }
+
+      &:active,
+      &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba($color-black,.2)
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+      }
+    
+      &-animated {
+        animation: moveInButton .5s ease-out .75s;
+        animation-fill-mode: backwards;
+      }
 
       @include respond(tab-port){
         font-size: 1.5rem;

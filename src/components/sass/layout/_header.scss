@@ -43,6 +43,10 @@
       top: 4rem;
       left: 4rem;
     }
+
+    @include respond(small-phone){
+      top: -1rem;
+    }
   };
 
   &__logo {

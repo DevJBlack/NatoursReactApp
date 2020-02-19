@@ -177,10 +177,7 @@
     font-weight: 100;
     margin-bottom: 4rem;
 
-    // @include respond(tab-port){
-    //   font-size: 5.4rem;
-    //   font-weight: 300;
-    // }
+  
   }
 
   // GIANT MEDIA QUERY 
@@ -209,7 +206,7 @@
   
           &--back {
             transform: rotateY(0deg);
-            clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
         }
       }
     
@@ -218,11 +215,6 @@
         transform: rotateY(0deg);
       }
     
-      // &__details {
-      //   li {
-      //     font-size: 2rem;
-      //   }   
-      // }
 
       &__details {
         ul {
@@ -256,6 +248,10 @@
         font-size: 5rem;
         font-weight: 100;
         margin-bottom: 4rem;
+
+        @include respond(small-phone) {
+          margin-bottom: 0rem;
+        }
       }
   }
 }
