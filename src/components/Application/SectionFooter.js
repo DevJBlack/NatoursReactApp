@@ -1,12 +1,20 @@
 import React from 'react'
 import imgLarge from '../img/logo-green-2x.png'
+import imgSmall from'../img/logo-green-1x.png'
+import imgLargeest from '../img/logo-green-small-2x.png'
+import imgSmallest from'../img/logo-green-small-1x.png'
 
 const SectionFooter = () => {
   return (
     <div>
       <footer className="footer">
         <div className="footer__logo-box">
-          <img src={imgLarge} alt="Full logo" className='footer__logo'/>
+
+          <picture className="foot__logo">
+            <source srcSet={`${imgSmallest} 1x, ${imgLargeest} 2x`} media="(max-width: 37.5em)"/>
+            <img srcSet={`${imgSmall} 1x, ${imgLarge} 2x`} alt="Full logo" className='footer__logo'/>
+          </picture>
+
         </div>
         <div className="box">
           <div className="box-1-of-2">

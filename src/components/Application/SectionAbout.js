@@ -3,6 +3,9 @@ import React from 'react'
 import natOne from '../img/nat-1-large.jpg'
 import natTwo from '../img/nat-2-large.jpg'
 import natThree from '../img/nat-3-large.jpg'
+import natOneSmall from '../img/nat-1.jpg'
+import natTwoSmall from '../img/nat-2.jpg'
+import natThreeSmall from '../img/nat-3.jpg'
 
 const SectionAbout = () => {
   return (
@@ -29,9 +32,19 @@ const SectionAbout = () => {
               </div>
               <div className='box-2-of-2'>
                   <div className="composition">
-                    <img src={natOne} alt="1" className="composition__photo composition__photo--p1"/>
-                    <img src={natTwo} alt="2" className="composition__photo composition__photo--p2"/>
-                    <img src={natThree} alt="3" className="composition__photo composition__photo--p3"/>
+
+                      <img srcSet={`${natOneSmall} 300w. ${natOne} 1000w `} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="1" className="composition__photo composition__photo--p1"
+                      src={natOne} />
+
+                      <img srcSet={`${natTwoSmall} 300w. ${natTwo} 1000w `} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="2" className="composition__photo composition__photo--p2"
+                      src={natTwo} />
+
+                      <img srcSet={`${natThreeSmall} 300w. ${natThree} 1000w `} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="3" className="composition__photo composition__photo--p3"
+                      src={natThree} />
+
+                      {/* <img src={natOne} alt="1" className="composition__photo composition__photo--p1"/> */}
+                      {/* <img src={natTwo} alt="2" className="composition__photo composition__photo--p2"/>
+                      <img src={natThree} alt="3" className="composition__photo composition__photo--p3"/> */}
                   </div>
               </div>
             </div>
