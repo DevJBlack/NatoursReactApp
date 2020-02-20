@@ -3,21 +3,18 @@
 .popup {
   height: 100vh;
   width: 100%;
-  background: rgba($color-black, .9);
+  background: rgba($color-black, .7);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5000;
-  
   opacity: 0;
   visibility: hidden;
-
-  
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition: all .3s;
+  backdrop-filter: blur(10px);
 
   
 
